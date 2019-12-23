@@ -93,7 +93,7 @@ bool check(int row, int col)
 void tryInsert(int num)
 {
     int row = num / 9, col = num % 9, tmp;
-    if (num == 81) {  // sudoku completed
+    if (num == 81) {  // Sudoku completed
         finish = clock();
         printRes();
         throw 'E';  // only need to find one solution
